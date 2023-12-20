@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		795B82E426114D2C004A60DE /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B82E326114D2C004A60DE /* ProductDetailView.swift */; };
 		795B82E626115172004A60DE /* FuelStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B82E526115172004A60DE /* FuelStoreView.swift */; };
 		79770BC9260C124D007C2E4A /* SKDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79770BC8260C124D007C2E4A /* SKDemoApp.swift */; };
-		79770BCB260C124D007C2E4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79770BCA260C124D007C2E4A /* ContentView.swift */; };
 		79770BCD260C1251007C2E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79770BCC260C1251007C2E4A /* Assets.xcassets */; };
 		79770BD0260C1251007C2E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79770BCF260C1251007C2E4A /* Preview Assets.xcassets */; };
 		79770BDF260C3DF7007C2E4A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79770BDE260C3DF7007C2E4A /* Store.swift */; };
@@ -38,7 +37,6 @@
 		795B82E526115172004A60DE /* FuelStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelStoreView.swift; sourceTree = "<group>"; };
 		79770BC5260C124D007C2E4A /* SKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79770BC8260C124D007C2E4A /* SKDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKDemoApp.swift; sourceTree = "<group>"; };
-		79770BCA260C124D007C2E4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79770BCC260C1251007C2E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79770BCF260C1251007C2E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79770BD7260C3CC2007C2E4A /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				793663ED261D233100DB96A9 /* BuyButtonStyle.swift */,
-				79770BCA260C124D007C2E4A /* ContentView.swift */,
 				7935D0E22612C12700031437 /* FuelProductView.swift */,
 				795B82E526115172004A60DE /* FuelStoreView.swift */,
 				7935D0E42612C29F00031437 /* FuelSupplyView.swift */,
@@ -213,7 +210,6 @@
 				790AF0FF261788390020DD40 /* SubscriptionsView.swift in Sources */,
 				795B82E626115172004A60DE /* FuelStoreView.swift in Sources */,
 				790AF0FD261690CE0020DD40 /* StatusInfoView.swift in Sources */,
-				79770BCB260C124D007C2E4A /* ContentView.swift in Sources */,
 				795B82B2260DAD23004A60DE /* ListCellView.swift in Sources */,
 				795B82E426114D2C004A60DE /* ProductDetailView.swift in Sources */,
 				79770BC9260C124D007C2E4A /* SKDemoApp.swift in Sources */,

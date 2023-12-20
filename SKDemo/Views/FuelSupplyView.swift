@@ -2,7 +2,7 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A view showing the total supply of each type of fuel purchased.
+A view showing the total supply of each type of purchased fuel.
 */
 
 import SwiftUI
@@ -85,5 +85,14 @@ struct FuelSupplyView: View {
             }
         default: return
         }
+    }
+}
+
+struct FuelSupplyView_Previews: PreviewProvider {
+    @StateObject static var store = Store()
+    
+    static var previews: some View {
+        FuelSupplyView(fuels: store.fuel, consumedFuel: { _ in })
+            .environmentObject(store)
     }
 }

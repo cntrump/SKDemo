@@ -2,8 +2,7 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A view for an individual Car or Subscription product that shows a buy button when displayed
-    within the store, but not when displayed in the MyCars view.
+A view for an individual car or subscription product that shows a Buy button when it displays within the store.
 */
 
 import SwiftUI
@@ -95,7 +94,7 @@ struct ListCellView: View {
 
     var buyButton: some View {
         Button(action: {
-            async {
+            Task {
                 await buy()
             }
         }) {
@@ -114,13 +113,8 @@ struct ListCellView: View {
             }
         }
         .onAppear {
-            async {
-                isPurchased = (try? await store.isPurchased(product.id)) ?? false
-            }
-        }
-        .onChange(of: store.purchasedIdentifiers) { identifiers in
-            async {
-                isPurchased = identifiers.contains(product.id)
+            Task {
+                isPurchased = (try? await store.isPurchased(product)) ?? false
             }
         }
     }

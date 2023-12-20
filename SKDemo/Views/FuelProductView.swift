@@ -43,7 +43,7 @@ struct FuelProductView: View {
 
     var buyButton: some View {
         Button(action: {
-            async {
+            Task {
                 await purchase()
             }
         }) {

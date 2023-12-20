@@ -1,31 +1,30 @@
 {
   "identifier" : "E8BE4D16",
   "nonRenewingSubscriptions" : [
-
-  ],
-  "products" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "9.99",
       "familyShareable" : false,
-      "internalID" : "F6BE4B97",
+      "internalID" : "9EAFFFBD",
       "localizations" : [
         {
-          "description" : "Solo riders only",
-          "displayName" : "Motorcycle",
+          "description" : "Standard 1 Year Service Access",
+          "displayName" : "Standard 1 Year Service Access",
           "locale" : "en_US"
         }
       ],
-      "productID" : "nonconsumable.motorcycle",
-      "referenceName" : "Motorcycle",
-      "type" : "NonConsumable"
-    },
+      "productID" : "nonRenewing.standard",
+      "referenceName" : "Standard",
+      "type" : "NonRenewingSubscription"
+    }
+  ],
+  "products" : [
     {
       "displayPrice" : "1.99",
       "familyShareable" : false,
       "internalID" : "36835F3D",
       "localizations" : [
         {
-          "description" : "A standard 5 seater",
+          "description" : "A standard five-seater",
           "displayName" : "Car",
           "locale" : "en_US"
         }
@@ -50,33 +49,18 @@
       "type" : "NonConsumable"
     },
     {
-      "displayPrice" : "3.99",
-      "familyShareable" : false,
-      "internalID" : "86C5212C",
-      "localizations" : [
-        {
-          "description" : "Need to carry heavy loads?",
-          "displayName" : "Truck",
-          "locale" : "en_US"
-        }
-      ],
-      "productID" : "nonconsumable.truck",
-      "referenceName" : "Truck",
-      "type" : "NonConsumable"
-    },
-    {
       "displayPrice" : "4.99",
       "familyShareable" : false,
       "internalID" : "C63E7D42",
       "localizations" : [
         {
-          "description" : "It's all about speed",
-          "displayName" : "Racecar",
+          "description" : "Race Car",
+          "displayName" : "Race Car",
           "locale" : "en_US"
         }
       ],
       "productID" : "nonconsumable.racecar",
-      "referenceName" : "Racecar",
+      "referenceName" : "Race Car",
       "type" : "NonConsumable"
     },
     {
@@ -127,7 +111,8 @@
   ],
   "settings" : {
     "_askToBuyEnabled" : false,
-    "_timeRate" : 0
+    "_compatibilityTimeRate" : 6,
+    "_timeRate" : 15
   },
   "subscriptionGroups" : [
     {
@@ -139,6 +124,9 @@
       "subscriptions" : [
         {
           "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
 
           ],
           "displayPrice" : "2.99",
@@ -163,6 +151,9 @@
           "adHocOffers" : [
 
           ],
+          "codeOffers" : [
+
+          ],
           "displayPrice" : "3.99",
           "familyShareable" : false,
           "groupNumber" : 2,
@@ -183,6 +174,9 @@
         },
         {
           "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
 
           ],
           "displayPrice" : "4.99",
@@ -212,7 +206,7 @@
     }
   ],
   "version" : {
-    "major" : 1,
-    "minor" : 1
+    "major" : 2,
+    "minor" : 0
   }
 }

@@ -2,7 +2,7 @@
 See LICENSE folder for this sample’s licensing information.
 
 Abstract:
-A view to display a Status in plain text.
+A view to display a status in plain text.
 */
 
 import SwiftUI
@@ -111,5 +111,27 @@ struct StatusInfoView: View {
         }
 
         return description
+    }
+}
+
+struct StatusInfoView_Previews: PreviewProvider {
+    @StateObject static var store = Store()
+    @State static var subscription: Product?
+    @State static var subscriptionStatus: Product.SubscriptionInfo.Status?
+    
+    static var previews: some View {
+        Group {
+            if let subscription, let subscriptionStatus {
+                StatusInfoView(product: subscription, status: subscriptionStatus)
+                    .environmentObject(store)
+            }
+        }
+        .task {
+            guard let product = store.purchasedSubscriptions.first else {
+                return
+            }
+            subscription = product
+            subscriptionStatus = try? await product.subscription?.status.last
+        }
     }
 }

@@ -6,16 +6,12 @@
 	<string>⛽️</string>
 	<key>consumable.fuel.octane89</key>
 	<string>⛽️</string>
-	<key>consumable.fule.octane91</key>
+	<key>consumable.fuel.octane91</key>
 	<string>⛽️</string>
-	<key>nonconsumable.motorcycle</key>
-	<string>🏍</string>
 	<key>nonconsumable.car</key>
 	<string>🚗</string>
 	<key>nonconsumable.utilityvehicle</key>
 	<string>🚙</string>
-	<key>nonconsumable.truck</key>
-	<string>🛻</string>
 	<key>nonconsumable.racecar</key>
 	<string>🏎</string>
 	<key>subscription.standard</key>
@@ -23,6 +19,8 @@
 	<key>subscription.premium</key>
 	<string>🗺</string>
 	<key>subscription.pro</key>
+	<string>🗺</string>
+	<key>nonRenewing.standard</key>
 	<string>🗺</string>
 </dict>
 </plist>

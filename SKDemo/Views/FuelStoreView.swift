@@ -25,3 +25,11 @@ struct FuelStoreView: View {
         }
     }
 }
+
+struct FuelStoreView_Previews: PreviewProvider {
+    @StateObject static var store = Store()
+    
+    static var previews: some View {
+        FuelStoreView(fuels: store.fuel, onPurchase: { _ in })
+    }
+}
